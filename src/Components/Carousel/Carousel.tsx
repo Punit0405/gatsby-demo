@@ -1,8 +1,8 @@
 import React from 'react';
 import { Carousel } from 'antd';
 import CarouselSubComponent from './CarouselSubComponent';
-import { CarouselBottomDiv, CarouselDiv, SeemoreButton } from './Carousel.styled';
-import { IGatsbyImageData, StaticImage } from 'gatsby-plugin-image';
+import { CarouselAntd, CarouselBottomDiv, CarouselDiv, SeemoreButton } from './Carousel.styled';
+import { IGatsbyImageData, StaticImage ,getImage } from 'gatsby-plugin-image';
 import { graphql, useStaticQuery } from 'gatsby';
 
 const contentStyle: React.CSSProperties = {
@@ -40,21 +40,22 @@ interface NodesType{
 const CarouselComponent = () => {
   const {allFile:{nodes}} = useStaticQuery(query);
   const newNodes:NodesType[] = nodes;
-  newNodes.splice(3,2)
+  // newNodes.splice(3,2)
   return (
-    <Carousel  effect="fade">
+    <CarouselAntd autoplay autoplaySpeed={3000}  effect="fade">
       { 
-        newNodes.map((node:NodesType,index:number)=>{
-        return  <CarouselSubComponent key={index} image={node.childImageSharp.gatsbyImageData}/>
+        newNodes.map((node:any,index:number)=>{
+        const image:any = getImage(node);
+        console.log(image , "Image")
+        return  <CarouselSubComponent key={index} image={image}/>
        })
-      
       }
    
        
       
       
        
-  </Carousel>
+  </CarouselAntd>
   )
 }
 

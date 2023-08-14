@@ -4,14 +4,15 @@ import CarouselComponent from '../Components/Carousel/Carousel'
 import OurCustomers from '../Components/OurCustomers/OurCustomers'
 import HumanCentricComponent from '../Components/HumanCentric/HumanCentricComponent'
 import OurIndustries from '../Components/OurIndustries/OurIndustries'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import "../styles/global.css"
 
 
-const index = () => {
+const index = ({data}:any) => {
+  const {nav:{links}} = data
     return (
       <div>
-        <Header links={['INDUSTRIES','SERVICES','INSIGHTS','ABOUT','CAREERS','CONTACT']}/>
+        <Header links={links}/>
         <CarouselComponent/>
         <OurCustomers/>
         <HumanCentricComponent/>
@@ -20,5 +21,17 @@ const index = () => {
     )
   
 }
+
+export const data = graphql`
+query MyQuery {
+ nav: allContentfulNavigation(sort: {createdAt: ASC}) {
+   links: nodes {
+      id
+      link
+      title
+    }
+  }
+}
+`
 
 export default index

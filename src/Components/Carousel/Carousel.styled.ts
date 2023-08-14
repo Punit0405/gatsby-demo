@@ -1,10 +1,12 @@
+import { Carousel } from 'antd';
 import { styled } from 'styled-components';
 
 const CarouselDiv = styled.div`
   font-family: 'Lato', sans-serif;
+  height: 100%;
+  width: 100%;
 `
-const CarouselImage = styled.img`
-`
+
 const CarouselBottomDiv = styled.div`
 position: absolute;
 bottom: 3rem;
@@ -40,4 +42,7 @@ const SeemoreButton = styled.button`
 
 `
 
-export {CarouselDiv,CarouselImage,CarouselBottomDiv,SeemoreButton}
+export const CarouselAntd = styled(Carousel)`
+`
+
+export {CarouselDiv,CarouselBottomDiv,SeemoreButton}
