@@ -8,7 +8,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 
 const BrandSlider = () => {
   const query = graphql`
-query MyQuery {
+query  {
   site {
     info:siteMetadata {
       brands:customerLogos

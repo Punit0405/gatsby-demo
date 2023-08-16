@@ -46,7 +46,6 @@ const CarouselComponent = () => {
       { 
         newNodes.map((node:any,index:number)=>{
         const image:any = getImage(node);
-        console.log(image , "Image")
         return  <CarouselSubComponent key={index} image={image}/>
        })
       }

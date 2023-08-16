@@ -1,5 +1,4 @@
 import type { GatsbyConfig } from "gatsby";
-console.log( `${__dirname}/src/images/` , "PathName")
 
 
 require("dotenv").config({

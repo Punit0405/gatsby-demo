@@ -6,24 +6,28 @@ import HumanCentricComponent from '../Components/HumanCentric/HumanCentricCompon
 import OurIndustries from '../Components/OurIndustries/OurIndustries'
 import { Link, graphql } from 'gatsby'
 import "../styles/global.css"
+import OurCulture from '../Components/OurCulture/OurCulture'
+import OurOffices from '../Components/OurOffices/OurOffices'
+import Footer from '../Components/Footer/Footer'
+import Layout from '../Components/Layout'
 
 
 const index = ({data}:any) => {
-  const {nav:{links}} = data
     return (
-      <div>
-        <Header links={links}/>
+      <Layout>
         <CarouselComponent/>
         <OurCustomers/>
         <HumanCentricComponent/>
         <OurIndustries/>
-      </div>
+        <OurCulture/>
+        <OurOffices/>
+      </Layout>
     )
   
 }
 
 export const data = graphql`
-query MyQuery {
+query  {
  nav: allContentfulNavigation(sort: {createdAt: ASC}) {
    links: nodes {
       id

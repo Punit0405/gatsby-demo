@@ -10,7 +10,6 @@ interface CarouselSubComponentProps {
     background: '#364d79',
   };
 const CarouselSubComponent = ({image}:CarouselSubComponentProps) => {
-  console.log(image ,"image")
   return (
   <CarouselDiv>
     <GatsbyImage  image={image} alt="Carousel image" />
