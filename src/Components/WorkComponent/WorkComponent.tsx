@@ -35,7 +35,7 @@ const WorkComponent = () => {
             ))
         }
     </WorkComponentSubDiv>
-
+    
    </WorkComponentDiv>
   )
 }
