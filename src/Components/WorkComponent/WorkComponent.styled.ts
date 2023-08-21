@@ -1,13 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "gatsby";
+import { url } from "inspector";
 import { styled } from "styled-components";
 
 
 export const WorkComponentDiv = styled.div`
-height: 110vh;
-width: 100%;
+min-height: 110vh;
 padding-top:14%;
 padding-left:10%;
+padding-right:10%;
+
 `
 
 export const WorkTitleDiv = styled.div`
@@ -42,12 +44,13 @@ u{
 export const WorkTitleP = styled.p`
 font-size: 1.7rem;
 `
+
 export const WorkComponentSubDiv = styled.div`
 display: flex;
 flex-wrap: wrap;
 gap:2%;
 width: 70%;
-height: 29%;
+height: 35vh;
 margin-top: 5%;
 `
 export const WorkDescriptionDiv = styled.div`
@@ -140,4 +143,21 @@ transition: all .2s ease-in-out;
 &:hover{
     border-bottom: 2px solid #e21776;
 }
+`
+interface StyledDivWithBackgroundProps {
+    backgroundimage: string;
+  }
+
+export const BackgrondImageDiv = styled.div<StyledDivWithBackgroundProps>`
+border: 2px solid red;
+height: 70vh;
+width: 80%;
+background-image:${(props:any) => `url(${props.backgroundimage})`};
+`
+export const SepratorHr = styled.hr`
+background-color: #efefef;
+height: 2px;
+margin-top: 120px ;
+margin-bottom: 120px ;
+width: 100%;
 `
