@@ -3,6 +3,9 @@ import React from 'react'
 import Layout from '../../Components/Layout'
 import InformatitonSection from '../../Components/WorkComponent/InformatitonSection'
 import WorkComponentForPage from '../../Components/WorkComponent/WorkComponentForPage'
+import { GotoWorkLink } from '../../Components/WorkComponent/WorkComponent.styled'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 const WorkComponentContentful = ({data}:any) => {
   console.log(data , "Data")
@@ -14,6 +17,7 @@ const WorkComponentContentful = ({data}:any) => {
    console.log(categoryData , "Category Data")
   return (
     <Layout>
+        <GotoWorkLink to="/work"><FontAwesomeIcon icon={faArrowLeft} />WORK</GotoWorkLink>
         <WorkComponentForPage 
          mainTitle={mainTitle}
          mainDescription={mainDescriptionParsed} 

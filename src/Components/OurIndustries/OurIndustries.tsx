@@ -3,19 +3,23 @@ import { DescriptionP, IndustriesDiv, LinkComponent, OurIndustriesContainerDiv, 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRightLong } from '@fortawesome/free-solid-svg-icons'
 import IndustryComponent from './IndustryComponent'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const OurIndustries = () => {
-    const industries = [
-        "AUTOMOTIVE",
-        "TECHNOLOGY,MEDIA & COMMUNICATOINS",
-        "ENERGY & UTILITIES",
-        "FINTECH",
-        "INDUSTRIAL",
-        "LIFE SCIENCES",
-        "ECOMMERCE,RETAIL & CONSUMER PRODUCTS",
-        "TELECOMMUNICATIONS",
-        "TRANSPOTATION"
-    ]
+  const {categories:{nodes}} = useStaticQuery(graphql`
+    query getWorkCategoriesQuery2 {
+        categories:allContentfulWorkCategories(sort: {createdAt: ASC}) {
+          nodes {
+            id
+            categoryName
+            mainTitle
+            
+          }
+        }
+      }
+    `);
+
+    console.log(nodes ,"Data from woek cate")
   return (
     <OurIndustriesDiv>
      <OurIndustriesContainerDiv>
@@ -28,9 +32,9 @@ const OurIndustries = () => {
     </div>
     <IndustriesDiv>
     {
-     industries.map((industry:string,index:number)=>
+     nodes.map((industry:any)=>
      (
-        <IndustryComponent key={index} industry={industry}/>
+        <IndustryComponent  key={industry.id} categoryName={industry.categoryName} industry={industry.mainTitle}/>
      )
      )
      }

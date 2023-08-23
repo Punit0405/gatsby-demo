@@ -7,12 +7,12 @@ export const CategoryInfoUpperDiv = styled.div`
 
 `
 export const CategoryInfoUpperH1 = styled.h1`
-font-size: 2rem;
+font-size: 1.5rem;
 margin: 0%;
 `
 export const CategoryInfoUpperP = styled.p`
-font-size: 1.5rem;
-font-weight: 400;
+font-size: 1.3rem;
+font-weight: 300;
 margin: 0%;
 `
 export const CategoryInfoLowerDiv = styled.div`

@@ -1,6 +1,7 @@
 import React from 'react'
 import { WorkDescriptionDiv, WorkTitleH1, WorkTitleP } from '../WorkComponent.styled'
 
+
 interface DescriptionDivProps {
     mainTitle:string,
     mainDescription:string,

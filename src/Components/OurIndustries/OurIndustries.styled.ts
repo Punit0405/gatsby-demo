@@ -1,3 +1,4 @@
+import { Link } from 'gatsby';
 import { styled } from 'styled-components';
 export const OurIndustriesDiv = styled.div`
 width: 100%;
@@ -35,18 +36,19 @@ display: flex;
 margin-top: 4%;
 flex-wrap: wrap;
 justify-content: space-around;
-padding: 0% 6%;
+padding: 0% 10%;
 `
 
-export const LinkComponent = styled.a`
+export const LinkComponent = styled(Link)`
 text-decoration: none;
 color: #fff;
 border: 1px solid #fff;
 padding: 1% 1%;
 border-radius:40px;
-font-size:1.5rem;
+font-size:1.7rem;
+scale: 110%;
 font-weight: 500;
-margin-bottom: 10px;
+margin-bottom: 20px;
 font-family: 'Lato', sans-serif;
 span{
     padding-right: 20px;

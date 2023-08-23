@@ -57,18 +57,7 @@ export const WorkDescriptionDiv = styled.div`
 width: 53%;
 font-weight: 300;
 `
-export const WorkCategoryDiv = styled.div`
-border: 2px solid black;
-height: 40px;
-padding: 1% 2%;
-font-weight: 700;
-font-size: 1.4rem;
-word-spacing: 1%;
-&:hover{
-  color: #007ac9 ;
-}
 
-`
 
 export const FontAwesomeIconI = styled(FontAwesomeIcon)`
 margin-left: 10px;
@@ -149,9 +138,8 @@ interface StyledDivWithBackgroundProps {
   }
 
 export const BackgrondImageDiv = styled.div<StyledDivWithBackgroundProps>`
-border: 2px solid red;
 height: 70vh;
-width: 80%;
+width: 100%;
 background-image:${(props:any) => `url(${props.backgroundimage})`};
 `
 export const SepratorHr = styled.hr`
@@ -160,4 +148,34 @@ height: 2px;
 margin-top: 120px ;
 margin-bottom: 120px ;
 width: 100%;
+`
+
+export const CategoryLink = styled(Link)`
+text-decoration: none;
+color: black;
+border: 2px solid black;
+height: 40px;
+padding: 1% 2%;
+font-weight: 700;
+font-size: 1.4rem;
+word-spacing: 1%;
+&:hover{
+  color: #007ac9 ;
+}
+`
+export const GotoWorkLink = styled(Link)`
+text-decoration: none;
+display: flex;
+color: #777;
+height: 40px;
+margin-left: 10%;
+margin-top: 5%;
+font-weight: 700;
+font-size: 1.4rem;
+word-spacing: 1%;
+&:hover{
+  color: black ;
+  gap: 1%;
+  font-size: 1.5rem;
+}
 `
