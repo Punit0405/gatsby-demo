@@ -1,14 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import OurIndustries from './OurIndustries';
-import IndustryComponent from './IndustryComponent';
+import type { Meta, StoryObj } from "@storybook/react";
+import OurIndustries from "./OurIndustries";
+import IndustryComponent from "./IndustryComponent";
 
 
 
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Intive/Home/OurIndustries/IndustryComponent',
-  component: IndustryComponent,
+    title: "Intive/Home/OurIndustries/IndustryComponent",
+    component: IndustryComponent,
 } satisfies Meta<typeof IndustryComponent>;
 
 export default meta;

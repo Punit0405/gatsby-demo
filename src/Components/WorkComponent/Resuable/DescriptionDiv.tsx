@@ -1,5 +1,5 @@
-import React from 'react'
-import { WorkDescriptionDiv, WorkTitleH1, WorkTitleP } from '../WorkComponent.styled'
+import React from "react";
+import { WorkDescriptionDiv, WorkTitleH1, WorkTitleP } from "../WorkComponent.styled";
 
 
 interface DescriptionDivProps {
@@ -9,17 +9,17 @@ interface DescriptionDivProps {
 }
 
 const DescriptionDiv = ({mainTitle
-,mainDescription}:DescriptionDivProps) => {
-  return (
-    <WorkDescriptionDiv>
-    <WorkTitleH1>
-        <u>{mainTitle}</u>
-    </WorkTitleH1>
-    <WorkTitleP>
-        {mainDescription}
-    </WorkTitleP>
-    </WorkDescriptionDiv>
-  )
-}
+    ,mainDescription}:DescriptionDivProps) => {
+    return (
+        <WorkDescriptionDiv>
+            <WorkTitleH1>
+                <u>{mainTitle}</u>
+            </WorkTitleH1>
+            <WorkTitleP>
+                {mainDescription}
+            </WorkTitleP>
+        </WorkDescriptionDiv>
+    );
+};
 
-export default DescriptionDiv
+export default DescriptionDiv;

@@ -1,12 +1,12 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import CarouselSubComponent from './CarouselSubComponent';
+import type { Meta, StoryObj } from "@storybook/react";
+import CarouselSubComponent from "./CarouselSubComponent";
 
 
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Intive/Home/CarouselComponent/CarouselSubComponent',
-  component: CarouselSubComponent,
+    title: "Intive/Home/CarouselComponent/CarouselSubComponent",
+    component: CarouselSubComponent,
 } satisfies Meta<typeof CarouselSubComponent>;
 
 export default meta;

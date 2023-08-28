@@ -1,12 +1,12 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import Header from './Header';
+import type { Meta, StoryObj } from "@storybook/react";
+import Header from "./Header";
 
 
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 const meta = {
-  title: 'Intive/Home/Header',
-  component: Header,
+    title: "Intive/Home/Header",
+    component: Header,
 } satisfies Meta<typeof Header>;
 
 export default meta;
@@ -15,8 +15,8 @@ type Story = StoryObj<typeof meta>;
 
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const HeaderComponent: Story = {
-  args: {
-    links:['INDUSTRIES','SERVICES','INSIGHTS','ABOUT','CAREERS','CONTACT']
-  },
+    args: {
+        links:["INDUSTRIES","SERVICES","INSIGHTS","ABOUT","CAREERS","CONTACT"]
+    },
 };
 

@@ -8,7 +8,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-`
+`;
 export const OurCultureTopDiv = styled.div`
     display: flex;
     flex-direction: column;
@@ -17,26 +17,26 @@ export const OurCultureTopDiv = styled.div`
     margin-bottom: 30px;
     pointer-events: none;
 
-`
+`;
 export const OurCultureBottomDiv = styled.div`
    display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-`
+`;
 
 export const OurCultureH1 = styled.h1`
 font-size: 2rem;
 align-self: center;
     text-align: center;
-`
+`;
 
 export const OurCultureP = styled.p`
     margin: 0;
     padding: 0;
     font-size: 1.3rem;
     font-weight: 300;
-`
+`;
 
 export const OurCultureBtn = styled.button`
     display: inline-flex;
@@ -55,4 +55,4 @@ export const OurCultureBtn = styled.button`
     background-color: rgb(226, 23, 118);
     color: rgb(255, 255, 255);
 
-`
+`;

@@ -1,11 +1,11 @@
-import { Carousel } from 'antd';
-import { styled } from 'styled-components';
+import { Carousel } from "antd";
+import { styled } from "styled-components";
 
 const CarouselDiv = styled.div`
   font-family: 'Lato', sans-serif;
   height: 100%;
   width: 100%;
-`
+`;
 
 const CarouselBottomDiv = styled.div`
 position: absolute;
@@ -24,7 +24,7 @@ background-color:rgb(0, 48, 80);
 
 
 
-`
+`;
 const SeemoreButton = styled.button`
     display: flex;
     align-items: center;
@@ -40,9 +40,9 @@ const SeemoreButton = styled.button`
     color: rgb(255, 255, 255);
     border: 1px solid rgb(0, 48, 80);
 
-`
+`;
 
 export const CarouselAntd = styled(Carousel)`
-`
+`;
 
-export {CarouselDiv,CarouselBottomDiv,SeemoreButton}
+export {CarouselDiv,CarouselBottomDiv,SeemoreButton};

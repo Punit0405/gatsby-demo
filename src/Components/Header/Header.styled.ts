@@ -1,4 +1,4 @@
-import { styled } from 'styled-components';
+import { styled } from "styled-components";
 
 
 const StyledDiv = styled.div`
@@ -12,7 +12,7 @@ const StyledDiv = styled.div`
   padding: 0% 6.2%;
   z-index: 2000;
   background-color: #fff;
-`
+`;
 
 const NavDiv = styled.div`
   display:flex;
@@ -32,7 +32,7 @@ const NavDiv = styled.div`
     
   }
   
-`
+`;
 
 
 const DropDownDiv = styled.div`
@@ -42,7 +42,7 @@ font-weight: 300;
 justify-content: space-between;
 align-items: center;
 
-`
+`;
 
 
-export {StyledDiv,NavDiv,DropDownDiv}
+export {StyledDiv,NavDiv,DropDownDiv};

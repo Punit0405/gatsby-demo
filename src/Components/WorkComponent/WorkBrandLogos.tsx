@@ -1,5 +1,5 @@
-import React from 'react'
-import { BrandDiv, BrandLogosDiv, WorkComponentBrandDescriptionP, WorkComponentBrandDiv, WorkComponentBrandLowerDiv, WorkComponentBrandTitleh1, WorkComponentBrandUpperDiv } from './WorkComponent.styled'
+import React from "react";
+import { BrandDiv, BrandLogosDiv, WorkComponentBrandDescriptionP, WorkComponentBrandDiv, WorkComponentBrandLowerDiv, WorkComponentBrandTitleh1, WorkComponentBrandUpperDiv } from "./WorkComponent.styled";
 
 const WorkBrandLogos = () => {
     const brandLogos = [
@@ -21,31 +21,31 @@ const WorkBrandLogos = () => {
         "https://images.ctfassets.net/ue4ib83wzj4v/1tGoiATMH8X50kbdohjtcT/9daac1d721183acfa6800f7c463b8793/deichmann.svg",
         "https://images.ctfassets.net/ue4ib83wzj4v/3i0YqxEGoyWiEP6WF2Fwn6/5ec62b3f9ee992c8ca29294afd2cea12/basf.svg",
         "https://images.ctfassets.net/ue4ib83wzj4v/6i6bQrGDncU2F7TMv5sHcz/24dd5efd247fdc642501eb11bd7f140f/tandem.svg"
-    ]
-  return (
-    <WorkComponentBrandDiv>
-        <WorkComponentBrandUpperDiv>
-            <WorkComponentBrandTitleh1>
+    ];
+    return (
+        <WorkComponentBrandDiv>
+            <WorkComponentBrandUpperDiv>
+                <WorkComponentBrandTitleh1>
             Our quest for digital excellence. It starts here.
-            </WorkComponentBrandTitleh1>
-            <WorkComponentBrandDescriptionP>
+                </WorkComponentBrandTitleh1>
+                <WorkComponentBrandDescriptionP>
             As drivers of digital excitement, we contribute to the business transformation of our clients across a wide range of industries.
-            </WorkComponentBrandDescriptionP>
+                </WorkComponentBrandDescriptionP>
             
-        </WorkComponentBrandUpperDiv>
-        <WorkComponentBrandLowerDiv>
-            <BrandLogosDiv>
+            </WorkComponentBrandUpperDiv>
+            <WorkComponentBrandLowerDiv>
+                <BrandLogosDiv>
                
-               {brandLogos.map((img)=>(
-                <BrandDiv><img src={img}></img></BrandDiv>
-               )
-               )}
-            </BrandLogosDiv>
+                    {brandLogos.map((img)=>(
+                        <BrandDiv><img src={img}></img></BrandDiv>
+                    )
+                    )}
+                </BrandLogosDiv>
 
-        </WorkComponentBrandLowerDiv>
+            </WorkComponentBrandLowerDiv>
 
-    </WorkComponentBrandDiv>
-  )
-}
+        </WorkComponentBrandDiv>
+    );
+};
 
-export default WorkBrandLogos
+export default WorkBrandLogos;
