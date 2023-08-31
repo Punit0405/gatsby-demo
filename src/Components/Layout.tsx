@@ -15,6 +15,7 @@ const Layout = (props: any) => {
       }
     }
   `);
+    console.log(data ,"data");
     const {
         nav: { links },
     } = data;
