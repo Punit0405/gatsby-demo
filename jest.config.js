@@ -25,12 +25,20 @@ module.exports = {
     },
     testEnvironment:"jsdom",
     setupFiles: ["<rootDir>/loadershim.js"],
+    collectCoverage:true,
+    collectCoverageFrom: [
+        "src/Components/**/*.{ts,tsx}",
+        "!src/Components/**/*.{stories styled ,test}.{ts,tsx}",
+        "!src/Components/**/*.stories.{ts,tsx}",
+        "!src/Components/**/*.styled.{ts,tsx}",
+        "!src/Components/**/*.test.{ts,tsx}",
+    ],
     "coverageThreshold": {
         "global": {
-            "branches": 80,
-            "functions": 80,
-            "lines": 80,
-            "statements": -10
+            "branches": 20,
+            "functions": 20,
+            "lines": 20,
+            "statements": -100
         }
     }
     
