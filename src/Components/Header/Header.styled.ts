@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 
-
 const StyledDiv = styled.div`
   display: flex;
   position: sticky;
@@ -15,34 +14,41 @@ const StyledDiv = styled.div`
 `;
 
 const NavDiv = styled.div`
-  display:flex;
+  display: flex;
   gap: 2rem;
   text-decoration: none;
   width: 60%;
-  a{
+  a {
     text-decoration: none;
     color: #000;
     font-weight: 700;
-    font-size:1.1rem;
+    font-size: 1.1rem;
     border: 3px solid #fff;
     border-radius: 3px;
-    &:hover{
-    border-bottom: 3px solid #e21776;
+    &:hover {
+      border-bottom: 3px solid #e21776;
     }
-    
   }
-  
 `;
 
+export const StyledA = styled.a`
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: 3px solid #fff;
+  border-radius: 3px;
+  &:hover {
+    border-bottom: 3px solid #e21776;
+  }
+`;
 
 const DropDownDiv = styled.div`
-display: flex;
-width: 7%;
-font-weight: 300;
-justify-content: space-between;
-align-items: center;
-
+  display: flex;
+  width: 7%;
+  font-weight: 300;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-
-export {StyledDiv,NavDiv,DropDownDiv};
+export { StyledDiv, NavDiv, DropDownDiv };

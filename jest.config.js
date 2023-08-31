@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-var-requires */
+
+
 const { compilerOptions } = require("./tsconfig.json");
 const { pathsToModuleNameMapper } = require("ts-jest");
 const paths = pathsToModuleNameMapper(compilerOptions.paths, {
@@ -21,4 +25,13 @@ module.exports = {
     },
     testEnvironment:"jsdom",
     setupFiles: ["<rootDir>/loadershim.js"],
+    "coverageThreshold": {
+        "global": {
+            "branches": 80,
+            "functions": 80,
+            "lines": 80,
+            "statements": -10
+        }
+    }
+    
 };

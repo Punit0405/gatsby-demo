@@ -8,21 +8,17 @@ import OurCulture from "../Components/OurCulture/OurCulture";
 import OurOffices from "../Components/OurOffices/OurOffices";
 import Layout from "../Components/Layout";
 
-
 const index = () => {
     return (
         <Layout>
-            <CarouselComponent/>
-            <OurCustomers/>
-            <HumanCentricComponent/>
-            <OurIndustries/>
-            <OurCulture/>
-            <OurOffices/>
+            <CarouselComponent />
+            <OurCustomers />
+            <HumanCentricComponent />
+            <OurIndustries />
+            <OurCulture />
+            <OurOffices />
         </Layout>
     );
-  
 };
-
-
 
 export default index;

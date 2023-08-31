@@ -1,23 +1,25 @@
 import React from "react";
-import { WorkDescriptionDiv, WorkTitleH1, WorkTitleP } from "../WorkComponent.styled";
-
+import {
+    WorkDescriptionDiv,
+    WorkTitleH1,
+    WorkTitleP,
+} from "../WorkComponent.styled";
 
 interface DescriptionDivProps {
-    mainTitle:string,
-    mainDescription:string,
-    
+  mainTitle: string;
+  mainDescription: string;
 }
 
-const DescriptionDiv = ({mainTitle
-    ,mainDescription}:DescriptionDivProps) => {
+const DescriptionDiv = ({
+    mainTitle,
+    mainDescription,
+}: DescriptionDivProps) => {
     return (
         <WorkDescriptionDiv>
             <WorkTitleH1>
                 <u>{mainTitle}</u>
             </WorkTitleH1>
-            <WorkTitleP>
-                {mainDescription}
-            </WorkTitleP>
+            <WorkTitleP>{mainDescription}</WorkTitleP>
         </WorkDescriptionDiv>
     );
 };

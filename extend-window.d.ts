@@ -1,3 +1,3 @@
 interface Window {
-      analytics: any;
+  analytics: any;
 }

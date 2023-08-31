@@ -1,14 +1,24 @@
 import React from "react";
-import { CategoryListDiv, CategoryListLeftDiv, CategoryInfoUpperP, CategoryInfoUpperH1, CategoryListRightDiv, CategoryListLeftImgDiv, } from "../Categoryinfo.styled";
-
+import {
+    CategoryListDiv,
+    CategoryListLeftDiv,
+    CategoryInfoUpperP,
+    CategoryInfoUpperH1,
+    CategoryListRightDiv,
+    CategoryListLeftImgDiv,
+} from "../Categoryinfo.styled";
 
 interface CategoryListDivCompProps {
-  image:string,
-  title:string,
-  description:string
+  image: string;
+  title: string;
+  description: string;
 }
 
-const CategoryListDivComp = ({image,title,description}:CategoryListDivCompProps) => {
+const CategoryListDivComp = ({
+    image,
+    title,
+    description,
+}: CategoryListDivCompProps) => {
     return (
         <CategoryListDiv>
             <CategoryListLeftDiv>
@@ -17,12 +27,8 @@ const CategoryListDivComp = ({image,title,description}:CategoryListDivCompProps)
                 </CategoryListLeftImgDiv>
             </CategoryListLeftDiv>
             <CategoryListRightDiv>
-                <CategoryInfoUpperH1>
-                    {title}
-                </CategoryInfoUpperH1>
-                <CategoryInfoUpperP>
-                    {description}
-                </CategoryInfoUpperP>
+                <CategoryInfoUpperH1>{title}</CategoryInfoUpperH1>
+                <CategoryInfoUpperP>{description}</CategoryInfoUpperP>
             </CategoryListRightDiv>
         </CategoryListDiv>
     );

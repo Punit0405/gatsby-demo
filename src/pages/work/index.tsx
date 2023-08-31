@@ -7,9 +7,9 @@ import InformatitonSection from "../../Components/WorkComponent/InformatitonSect
 const WorkPage = () => {
     return (
         <Layout>
-            <WorkComponent/>   
-            <WorkBrandLogos/>   
-            <InformatitonSection/>   
+            <WorkComponent />
+            <WorkBrandLogos />
+            <InformatitonSection />
         </Layout>
     );
 };
