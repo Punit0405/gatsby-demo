@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 
 export const CategoryInfoDiv = styled.div``;
 export const CategoryInfoUpperDiv = styled.div``;

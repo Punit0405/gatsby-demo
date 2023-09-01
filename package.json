@@ -17,8 +17,7 @@
     "build-storybook": "storybook build",
     "cstart": "gatsby clean && gatsby develop",
     "test": "jest",
-    "lint:fix": "eslint --ignore-path .gitignore . --fix",
-    "lint": "eslint --ignore-path .gitignore .",
+    "lint": "eslint --ignore-path .gitignore .  --fix",
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "prepare": "husky install"
   },

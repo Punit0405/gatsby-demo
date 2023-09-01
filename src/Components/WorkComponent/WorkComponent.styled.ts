@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "gatsby";
-import { styled } from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'gatsby';
+import { styled } from 'styled-components';
 
 export const WorkComponentDiv = styled.div`
   min-height: 110vh;

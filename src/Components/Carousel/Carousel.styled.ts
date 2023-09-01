@@ -1,5 +1,5 @@
-import { Carousel } from "antd";
-import { styled } from "styled-components";
+import { Carousel } from 'antd';
+import { styled } from 'styled-components';
 
 const CarouselDiv = styled.div`
   font-family: 'Lato', sans-serif;

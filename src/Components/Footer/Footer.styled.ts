@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "gatsby";
-import { styled } from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'gatsby';
+import { styled } from 'styled-components';
 
 export const FooterDiv = styled.div`
   display: flex;

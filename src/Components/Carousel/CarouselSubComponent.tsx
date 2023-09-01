@@ -1,26 +1,26 @@
-import React from "react";
+import React from 'react';
 import {
-    CarouselBottomDiv,
-    CarouselDiv,
-    SeemoreButton,
-} from "./Carousel.styled";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
+  CarouselBottomDiv,
+  CarouselDiv,
+  SeemoreButton,
+} from './Carousel.styled';
+import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 interface CarouselSubComponentProps {
   image: IGatsbyImageData;
-  index:number
+  index: number;
 }
 
-const CarouselSubComponent = ({ image , index }: CarouselSubComponentProps) => {
-    console.log("inteš",index);
-    return (
-        <CarouselDiv>
-            <GatsbyImage data-testid={`test-${index}`} image={image} alt=""/>
-            <CarouselBottomDiv>
+const CarouselSubComponent = ({ image, index }: CarouselSubComponentProps) => {
+  console.log('inteš', index);
+  return (
+    <CarouselDiv>
+      <GatsbyImage data-testid={`test-${index}`} image={image} alt="" />
+      <CarouselBottomDiv>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
         voluptate!
-                <SeemoreButton>SEE</SeemoreButton>
-            </CarouselBottomDiv>
-        </CarouselDiv>
-    );
+        <SeemoreButton>SEE</SeemoreButton>
+      </CarouselBottomDiv>
+    </CarouselDiv>
+  );
 };
 export default CarouselSubComponent;

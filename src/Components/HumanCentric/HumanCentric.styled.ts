@@ -1,5 +1,5 @@
-import { styled } from "styled-components";
-import { CenterDiv } from "../../helperComponents";
+import { styled } from 'styled-components';
+import { CenterDiv } from '../../helperComponents';
 
 const HumanCentricDiv = styled.div`
   p {
@@ -76,9 +76,9 @@ export const NumberP = styled.p`
   margin: 0% 0%;
 `;
 export {
-    HumanCentricDiv,
-    HumanCentricLeftDiv,
-    HumanCentricRightDiv,
-    HumanCentricLeftBottomDiv,
-    HumanCentricLeftUpperDiv,
+  HumanCentricDiv,
+  HumanCentricLeftDiv,
+  HumanCentricRightDiv,
+  HumanCentricLeftBottomDiv,
+  HumanCentricLeftUpperDiv,
 };

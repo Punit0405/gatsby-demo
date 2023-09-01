@@ -1,4 +1,4 @@
-import { styled } from "styled-components";
+import { styled } from 'styled-components';
 const OurCustomersDiv = styled.div`
   background-color: white;
   width: 100%;
