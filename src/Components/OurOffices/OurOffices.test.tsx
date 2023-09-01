@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import React from 'react';
-import OurIndustries from './OurIndustries';
 import '@testing-library/jest-dom';
+import OurOffices from './OurOffices';
 
 jest.mock('gatsby', () => ({
   Link: ({ to, children }: any) => <a href={to}>{children}</a>,
@@ -18,12 +18,16 @@ jest.mock('gatsby', () => ({
   }),
   graphql: jest.fn(),
 }));
-describe('Rendering our industries', () => {
-  it('Rendering Our Industries', () => {
-    render(<OurIndustries />);
-    const linkEle = screen.getByRole('link', {
-      name: 'AUTOMOTIVE',
+describe('Rendering Our Offices', () => {
+  it('Rendering Our Offices', () => {
+    render(<OurOffices />);
+    const titleEle = screen.getByRole('heading', {
+      name: 'A global company',
     });
-    expect(linkEle).toBeInTheDocument();
+    expect(titleEle).toBeInTheDocument();
+    const descEle = screen.getByText(
+      /intive transcends borders, with over 3,000 team members and 37 nationalities, spread across 3 continents\./i,
+    );
+    expect(descEle).toBeInTheDocument();
   });
 });

@@ -23,7 +23,7 @@ const CategoryListDivComp = ({
     <CategoryListDiv>
       <CategoryListLeftDiv>
         <CategoryListLeftImgDiv>
-          <img src={image} alt="" />
+          <img src={image} alt={image} />
         </CategoryListLeftImgDiv>
       </CategoryListLeftDiv>
       <CategoryListRightDiv>

@@ -11,7 +11,6 @@ interface CarouselSubComponentProps {
 }
 
 const CarouselSubComponent = ({ image, index }: CarouselSubComponentProps) => {
-  console.log('inteš', index);
   return (
     <CarouselDiv>
       <GatsbyImage data-testid={`test-${index}`} image={image} alt="" />

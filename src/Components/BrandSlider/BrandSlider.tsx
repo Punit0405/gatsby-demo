@@ -19,7 +19,6 @@ const BrandSlider = () => {
       info: { brands },
     },
   } = useStaticQuery(query);
-  console.log(brands);
   return (
     <UpdatedMarquee autoFill speed={280}>
       {brands.map((image: string, index: number) => (

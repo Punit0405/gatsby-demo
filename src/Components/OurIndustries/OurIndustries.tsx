@@ -24,7 +24,6 @@ const OurIndustries = () => {
     }
   `);
 
-  console.log(nodes, 'Data from woek cate');
   return (
     <OurIndustriesDiv>
       <OurIndustriesContainerDiv>

@@ -24,8 +24,6 @@ const WorkComponent = () => {
       }
     }
   `);
-
-  console.log(nodes, 'Data from woek cate');
   return (
     <WorkComponentDiv>
       <DescriptionDiv

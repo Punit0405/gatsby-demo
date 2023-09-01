@@ -32,12 +32,10 @@ const CarouselComponent = () => {
     allFile: { nodes },
   } = useStaticQuery(query);
   const newNodes: NodesType[] = nodes;
-  console.log(newNodes, 'New NOdes');
   return (
     <CarouselAntd autoplay autoplaySpeed={3000} effect="fade">
       {newNodes.map((node: any, index: number) => {
         const image: IGatsbyImageData = getImage(node) as IGatsbyImageData;
-        console.log(index, 'indes');
         return <CarouselSubComponent index={index} key={index} image={image} />;
       })}
     </CarouselAntd>
