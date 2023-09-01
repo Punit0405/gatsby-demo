@@ -7,12 +7,14 @@ import {
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 interface CarouselSubComponentProps {
   image: IGatsbyImageData;
+  index:number
 }
 
-const CarouselSubComponent = ({ image }: CarouselSubComponentProps) => {
+const CarouselSubComponent = ({ image , index }: CarouselSubComponentProps) => {
+    console.log("inteš",index);
     return (
         <CarouselDiv>
-            <GatsbyImage image={image} alt="Carousel image" />
+            <GatsbyImage data-testid={`test-${index}`} image={image} alt=""/>
             <CarouselBottomDiv>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
         voluptate!

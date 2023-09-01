@@ -2,6 +2,7 @@ import React from "react";
 import { BrandImage } from "../OurCustomers/OurCustomers.styled";
 import { UpdatedMarquee } from "./BrandSlider.styled";
 import { graphql, useStaticQuery } from "gatsby";
+import "resize-observer-polyfill/dist/ResizeObserver.global";
 
 const BrandSlider = () => {
     const query = graphql`
