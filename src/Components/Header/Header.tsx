@@ -41,11 +41,6 @@ const Header = ({ links }: HeaderProps) => {
     },
   ];
   const dropDownOnChange = (value: any) => {
-    window.analytics.track('DropDownChange Was Noticed', {
-      userId: 13,
-      gender: 'male',
-      age: 33,
-    });
     setisOpen(value);
   };
   return (

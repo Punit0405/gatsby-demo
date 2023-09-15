@@ -15,6 +15,7 @@ const StyledDiv = styled.div`
 
 const NavDiv = styled.div`
   display: flex;
+  align-items: center;
   gap: 2rem;
   text-decoration: none;
   width: 60%;
