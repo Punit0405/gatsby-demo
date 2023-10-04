@@ -10,7 +10,7 @@ const meta = {
     (Story) => (
       <div
         style={{
-          fontFamily: "Lato', sans-serif",
+          fontFamily: 'Lato\', sans-serif',
           border: '2px solid red',
         }}
       >
